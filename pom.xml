@@ -10,8 +10,8 @@
 
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
-    <artifactId>ngplus</artifactId>
-    <version>0.9.3-SNAPSHOT</version>
+    <artifactId>AngularPlus</artifactId>
+    <version>0.9.2-SNAPSHOT</version>
     <name>AngularPlus</name>
     <description>WebJar for AngularPlus</description>
     <url>http://webjars.org</url>
@@ -19,15 +19,15 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <upstream.version>0.9.2</upstream.version>
-        <upstream.url>https://github.com/AngularPlus/AngularPlus/archive/0.9.2.zip</upstream.url>
+        <upstream.url>https://github.com/AngularPlus/AngularPlus/archive/${upstream.version}.zip</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${project.version}</destDir>
         <requirejs>
             {
                 "paths": {
-                    "ngplus": "ngplus-overlay.js"
+                    "AngularPlus": "AngularPlus-overlay.js"
                 },
                 "shim": {
-                    "ngplus": ["angular"]
+                    "AngularPlus": ["angular"]
                 }
             }
         </requirejs>
@@ -50,9 +50,9 @@
     </licenses>
 
     <scm>
-        <url>http://github.com/webjars/ngplus</url>
-        <connection>scm:git:https://github.com/webjars/ngplus.git</connection>
-        <developerConnection>scm:git:https://github.com/webjars/ngplus.git</developerConnection>
+        <url>http://github.com/webjars/AngularPlus</url>
+        <connection>scm:git:https://github.com/webjars/AngularPlus.git</connection>
+        <developerConnection>scm:git:https://github.com/webjars/AngularPlus.git</developerConnection>
         <tag>HEAD</tag>
     </scm>
 
